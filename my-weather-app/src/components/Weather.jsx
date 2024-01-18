@@ -41,11 +41,11 @@ const Weather = () => {
       </div>
 
       {weatherData && (
-        <div className="card">
-          <h2>{weatherData.name}, {weatherData.sys.country}</h2>
-          <p>{weatherData.weather[0].description}</p>
-          <p>Temperature: {weatherData.main.temp}°C</p>
-        </div>
+         <div className="card">
+         <h2>{weatherData.name}, {weatherData.sys.country}</h2>
+         <p>{weatherData.weather[0].description}</p>
+         <p>Temperature: {Math.round(weatherData.main.temp - 273.15)}°C</p>
+       </div>
       )}
     </div>
   );
