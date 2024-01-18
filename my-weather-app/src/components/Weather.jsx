@@ -29,25 +29,25 @@ const Weather = () => {
 //   }, []); // Empty dependency array ensures the effect runs only once on mount
 
   return (
-    // <div className="weather-card">
-    //   <div className="search-area">
-    //     <input
-    //       type="text"
-    //       placeholder="Enter city"
-    //       value={city}
-    //       onChange={(e) => setCity(e.target.value)}
-    //     />
-    //     <button onClick={handleSearch}>Search</button>
-    //   </div>
+    <div className="weather-card">
+      <div className="search-area">
+        <input
+          type="text"
+          placeholder="Enter city"
+          value={city}
+          onChange={(e) => setCity(e.target.value)}
+        />
+        <button onClick={handleSearch}>Search</button>
+      </div>
 
-    //   {weatherData && (
-    //     <div className="card">
-    //       <h2>{weatherData.name}, {weatherData.sys.country}</h2>
-    //       <p>{weatherData.weather[0].description}</p>
-    //       <p>Temperature: {weatherData.main.temp}°C</p>
-    //     </div>
-    //   )}
-    // </div>
+      {weatherData && (
+        <div className="card">
+          <h2>{weatherData.name}, {weatherData.sys.country}</h2>
+          <p>{weatherData.weather[0].description}</p>
+          <p>Temperature: {weatherData.main.temp}°C</p>
+        </div>
+      )}
+    </div>
   );
 };
 
