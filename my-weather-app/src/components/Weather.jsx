@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import './Weather.css';
 
 const Weather = () => {
-  const [city, setCity] = useState(''); // Set default city to Eldoret
+  const [city, setCity] = useState('Eldoret'); // Set default city to Eldoret
   const [weatherData, setWeatherData] = useState(null);
 
   const handleSearch = async () => {
