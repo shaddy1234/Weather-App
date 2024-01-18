@@ -23,10 +23,10 @@ const Weather = () => {
     }
   };
 
-//   useEffect(() => {
-//     // Fetch weather data for the default city (Eldoret) on component mount
-//     handleSearch();
-//   }, []); // Empty dependency array ensures the effect runs only once on mount
+  useEffect(() => {
+    // Fetch weather data for the default city (Eldoret) on component mount
+    handleSearch();
+  }, []); // Empty dependency array ensures the effect runs only once on mount
 
   return (
     <div className="weather-card">
