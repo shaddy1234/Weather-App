@@ -1,34 +1,3 @@
-
-
-/*.weather-card {
-  background-color: #8aff8a;
-  padding: 20px;
-  border-radius: 10px;
-  width: 300px; 
-  margin: auto;
-  margin-top: 50px; 
-}
-
-.search-area {
-  margin-bottom: 20px;
-}
-
-input {
-  padding: 8px;
-  margin-right: 10px;
-}
-
-button {
-  padding: 8px;
-  cursor: pointer;
-}
-
-.card {
-  text-align: center;
-  color: #333;
-}
-*/
-
 /* src/components/Weather.css */
 .weather-card {
   background-color: #8aff8a;
